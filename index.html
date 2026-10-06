@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Scroll-driven hero section recreated for the Itzfizz Web Development Internship assignment." />
+  <title>WELCOME ITZFIZZ — Scroll Experience</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <!-- HERO / SCROLL SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+
+        <div class="hero-copy">
+          <p class="eyebrow">DIGITAL EXPERIENCE • 2026</p>
+
+          <h1 class="headline" aria-label="WELCOME ITZFIZZ">
+            <span class="headline-line">WELCOME</span>
+            <span class="headline-line">ITZFIZZ</span>
+          </h1>
+
+          <p class="intro">
+            A scroll-driven web experience built with semantic HTML,
+            modern CSS, JavaScript and GSAP.
+          </p>
+
+          <div class="stats" aria-label="Project statistics">
+            <div class="stat">
+              <strong data-value="98">0</strong><span>%</span>
+              <p>Performance Focus</p>
+            </div>
+            <div class="stat">
+              <strong data-value="72">0</strong><span>%</span>
+              <p>Scroll Progress</p>
+            </div>
+            <div class="stat">
+              <strong data-value="24">0</strong><span>/7</span>
+              <p>Digital Ready</p>
+            </div>
+          </div>
+
+          <div class="scroll-hint">
+            <span class="mouse"></span>
+            <span>SCROLL TO EXPLORE</span>
+          </div>
+        </div>
+
+        <!-- Main visual -->
+        <div class="visual-wrap" aria-hidden="true">
+          <div class="visual-glow"></div>
+
+          <div class="orbital orbital-one"></div>
+          <div class="orbital orbital-two"></div>
+
+          <div class="main-object">
+            <div class="object-inner">
+              <span class="object-text">FIZZ</span>
+              <span class="object-dot"></span>
+            </div>
+          </div>
+
+          <div class="floating-card card-one">
+            <span class="card-number">01</span>
+            <span>CREATE</span>
+          </div>
+
+          <div class="floating-card card-two">
+            <span class="card-number">02</span>
+            <span>MOVE</span>
+          </div>
+
+          <div class="floating-card card-three">
+            <span class="card-number">03</span>
+            <span>IMPACT</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-bar"></div>
+      </div>
+    </section>
+
+    <!-- Extra content gives the hero enough scroll space and demonstrates a complete page -->
+    <section class="content-section">
+      <div class="content-grid">
+        <div>
+          <p class="section-label">THE EXPERIENCE</p>
+          <h2>Motion that responds to the user.</h2>
+        </div>
+        <div>
+          <p>
+            This section exists after the hero so the scroll interaction feels
+            natural. The main visual above reacts directly to scroll progress
+            instead of playing as an automatic timed animation.
+          </p>
+          <p>
+            Built with transform-based animation for smoother performance on
+            desktop and mobile devices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>ITZFIZZ • WEB DEVELOPMENT ASSIGNMENT</span>
+      <span>BUILT WITH HTML • CSS • JS • GSAP</span>
+    </footer>
+  </main>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
